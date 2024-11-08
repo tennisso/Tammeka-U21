@@ -1,0 +1,20 @@
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 0;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: rgb(217, 214, 214);
+    font-weight: bold;
+}
+td {
+    background-color: white;
+}
