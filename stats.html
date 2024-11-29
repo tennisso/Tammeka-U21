@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="stiil.css">
 </head>
+
 <body>
+
     <h1>Statistika 2024</h1>
-    <table>
+    <table id ="statistikaTabel">
         <caption>Mängijate statistika 2024</caption>
         <thead>
             <tr>
                 <th scope="col">Mängija</th>
-                <th scope="col">Mängud</th>
-                <th scope="col">Väravad</th>
-                <th scope="col">Kollased kaardid</th>
-                <th scope="col">Punased kaardid</th>
+                <th scope="col" onclick="sorteeriTabel(0)">Mängud</th>
+                <th scope="col" onclick="sorteeriTabel(1)">Väravad</th>
+                <th scope="col" onclick="sorteeriTabel(2)">Kollased kaardid</th>
+                <th scope="col" onclick="sorteeriTabel(3)">Punased kaardid</th>
             </tr>
         </thead>
         <tbody>
@@ -246,5 +249,7 @@
             </tr>
         </tbody>
     </table>
+
+<script src="stats.js"></script>
 </body>
 </html>

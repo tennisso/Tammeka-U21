@@ -1,20 +1,22 @@
+
 table {
     width: 80%;
     border-collapse: collapse;
-    margin-top: 0;
-    color: white;
+    margin-top: 5;
+    color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 14px;
-    text-align: middle;
+    text-align: center;
 }
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: middle;
+    text-align: center;
 }
 th {
     background-color: #1800de;
     font-weight: bold;
+    color: white;
 }
 td {
     background-color: white;
