@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: lulo-clean-w01-one-bold, lulo-clean-w05-one-bold, sans-serif;
+}
+
+/* The navigation bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #1300de;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    padding: 10px 20px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 20px; /* Vahemaa nupud */
+}
+  
+  /* Links inside the navbar */
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+  /* Change background on mouse-over */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+  
+.social-icons a {
+    font-size: 20px;
+    color: white;
+    margin-left: 10px; /* Vaheline kaugus sotsiaalmeedia ikonide vahel */
+}
+.social-icons a:hover {
+    color: #4CAF50; /* Hover värv sotsiaalmeedia ikoonidel */
+}
+
+.logo-link {
+    display: block;
+}
+
+.logo {
+    width: 50px; /* Kohandage vastavalt logo suurusele */
+    height: auto;
+}
+
+  /* Main content */
+.main {
+    margin-top: 10px; /* Add a top margin to avoid content overlay */
+}
+
+  /* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+  
+  /* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+  
+.social-icons a {
+    margin-left: 10px;
+    font-size: 20px;
+    color: white;
+}
+.social-icons a:hover {
+    color: #4CAF50; /* Vähemalt roheliseks, kui hoverdatakse */
+}
