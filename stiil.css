@@ -24,8 +24,19 @@ th {
     font-weight: bold;
     color: white;
 }
+th:hover {
+    background: #5a66a1;
+    color: black;
+}
 td {
     background-color: white;
 }
 
-  
+.tabeli_paigutuseks {
+    margin-top: 200px; 
+    margin-bottom: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
