@@ -2,14 +2,15 @@ table {
     width: 80%;
     border-collapse: collapse;
     margin-top: 0;
-    color: black;
+    color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 14px;
+    text-align: middle;
 }
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
+    text-align: middle;
 }
 th {
     background-color: #1800de;
