@@ -7,12 +7,12 @@ table {
     font-size: 14px;
 }
 th, td {
-    border: 1px solid #1800de;
+    border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
 }
 th {
-    background-color: rgb(217, 214, 214);
+    background-color: #1800de;
     font-weight: bold;
 }
 td {
