@@ -1,5 +1,5 @@
 body {
-    background-color:#1300de;
+    background-color:rgb(32, 32, 94);
     margin: 0;
 }
 
@@ -21,7 +21,7 @@ h3 {
 .content-container {
     background-color: white;
     width: 94%;
-    margin: -40px auto 0;
+    margin: -40px auto 15px;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -33,7 +33,7 @@ h3 {
     color: black;
 }
 
-a .btn {
+.btn {
     background-color: rgb(230, 230, 230);
     border: none;
     padding: 10px 10px;
@@ -48,7 +48,7 @@ a .btn {
     cursor: pointer;
 }
 
-a .btn:hover {
+.btn:hover {
     color: white;
     text-decoration: none;
     background-color: #1300de;
