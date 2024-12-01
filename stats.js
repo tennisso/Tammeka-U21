@@ -1,43 +1,46 @@
 function sorteeriTabel(veerg) {
     const tabel = document.getElementById("statistikaTabel");
-    let vahetus, i, rida, järgmineRida, suund = "kasvav", vahetusi = true;
+    let i;
+    let rida;
+    let järgmineRida;
+    let suund = "kahanev";
+    let vahetusi = true;
 
-    // Kordab, kuni ei ole enam vahetusi
     while (vahetusi) {
         vahetusi = false;
         const read = tabel.rows;
 
         // Läbib kõik read (va. 1. rida)
         for (i = 1; i < read.length - 1; i++) {
-            vahetus = false;
+            let peaksVahetama = false;
             rida = read[i].cells[veerg].innerHTML.toLowerCase();
             järgmineRida = read[i + 1].cells[veerg].innerHTML.toLowerCase();
 
-            // Kasvav järjestus
             if (suund === "kasvav") {
                 if (isNaN(rida) || isNaN(järgmineRida)) {
-                    if (rida > järgmineRida) vahetus = true;
-                } else if (Number(rida) > Number(järgmineRida)) vahetus = true;
+                    if (rida > järgmineRida) {
+                         peaksVahetama = true;
+                    }
+                } else if (Number(rida) > Number(järgmineRida)) { 
+                    peaksVahetama = true
+                };
             }
-            // Kahanev
             else if (suund === "kahanev") {
                 if (isNaN(rida) || isNaN(järgmineRida)) {
-                    if (rida < järgmineRida) vahetus = true;
-                } else if (Number(rida) < Number(järgmineRida)) vahetus = true;
+                    if (rida < järgmineRida) { 
+                        peaksVahetama = true;
+                    }
+                } else if (Number(rida) < Number(järgmineRida)) {
+                    peaksVahetama = true;
+                }
             }
 
             // Kui vahetus on vajalik
-            if (vahetus) {
+            if (peaksVahetama) {
                 read[i].parentNode.insertBefore(read[i + 1], read[i]);
                 vahetusi = true;
                 break; // Välju välimisest tsüklist, kui vahetus on tehtud
             }
-        }
-
-        // Kui vahetusi ei toimunud ja suund on kasvav, vaheta suund kahanevaks
-        if (!vahetusi && suund === "kasvav") {
-            suund = "kahanev";
-            vahetusi = true; // Alustame uut järjestamist kahanevas suunas
         }
     }
 }
@@ -50,8 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         instagram: 'https://instagram.com/yourprofile',
         linkedin: 'https://linkedin.com/in/yourprofile'
     };
- const iconsContainer = document.querySelector('.social-media-icons');
-    
+    const iconsContainer = document.querySelector('.social-media-icons');
 
     Object.keys(sotsiaalmeedia).forEach(platvorm => {
         const link = document.createElement('a');
@@ -61,6 +63,8 @@ document.addEventListener('DOMContentLoaded', function() {
         icon.classList.add('fa', `fa-${platvorm}`);
         link.appendChild(icon);
 
-        iconsContainer.appendChild(link);
+        if (iconsContainer !== null) {
+            iconsContainer.appendChild(link);
+        }
     });
 });
