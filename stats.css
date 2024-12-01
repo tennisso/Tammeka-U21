@@ -1,9 +1,15 @@
-
 h1 {
-    margin-top: 100px; /* Lisab ülemise tühiku, et nav bar ei kataks pealkirja */
+    margin-top: 120px; 
     text-align: center;
     font-size: 30px;
 }
+
+.table-header:hover {
+    cursor: pointer;
+    background: #5a66a1;
+    color: black;
+}
+
 table {
     width: 80%;
     border-collapse: collapse;
@@ -13,6 +19,7 @@ table {
     font-size: 14px;
     text-align: center;
 }
+
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
@@ -23,8 +30,16 @@ th {
     font-weight: bold;
     color: white;
 }
+
 td {
     background-color: white;
 }
 
-  
+.tabeli_paigutuseks {
+    margin-top: 200px; 
+    margin-bottom: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
