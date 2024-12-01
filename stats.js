@@ -44,27 +44,3 @@ function sorteeriTabel(veerg) {
         }
     }
 }
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const sotsiaalmeedia = {
-        facebook: 'https://facebook.com/yourpage',
-        twitter: 'https://twitter.com/yourprofile',
-        instagram: 'https://instagram.com/yourprofile',
-        linkedin: 'https://linkedin.com/in/yourprofile'
-    };
-    const iconsContainer = document.querySelector('.social-media-icons');
-
-    Object.keys(sotsiaalmeedia).forEach(platvorm => {
-        const link = document.createElement('a');
-        link.href = sotsiaalmeedia[platvorm];
-        link.classList.add('social-icon', platvorm);
-        const icon = document.createElement('i');
-        icon.classList.add('fa', `fa-${platvorm}`);
-        link.appendChild(icon);
-
-        if (iconsContainer !== null) {
-            iconsContainer.appendChild(link);
-        }
-    });
-});
