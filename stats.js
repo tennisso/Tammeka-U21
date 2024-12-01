@@ -5,6 +5,7 @@ function sorteeriTabel(veerg) {
     let järgmineRida;
     let suund = "kahanev";
     let vahetusi = true;
+    let järjestusVahetatud = false;
 
     while (vahetusi) {
         vahetusi = false;
@@ -18,20 +19,24 @@ function sorteeriTabel(veerg) {
 
             if (suund === "kasvav") {
                 if (isNaN(rida) || isNaN(järgmineRida)) {
-                    if (rida > järgmineRida) {
+                    if (rida < järgmineRida) {
                          peaksVahetama = true;
+                         järjestusVahetatud = true;
                     }
                 } else if (Number(rida) > Number(järgmineRida)) { 
-                    peaksVahetama = true
+                    peaksVahetama = true;
+                    järjestusVahetatud = true;
                 };
             }
             else if (suund === "kahanev") {
                 if (isNaN(rida) || isNaN(järgmineRida)) {
                     if (rida > järgmineRida) {
                         peaksVahetama = true;
+                        järjestusVahetatud = true;
                     }
                 } else if (Number(rida) < Number(järgmineRida)) {
                     peaksVahetama = true;
+                    järjestusVahetatud = true;
                 }
             }
 
@@ -41,6 +46,11 @@ function sorteeriTabel(veerg) {
                 vahetusi = true;
                 break; // Välju välimisest tsüklist, kui vahetus on tehtud
             }
+        }
+
+        if (vahetusi === false && järjestusVahetatud === false) {
+            suund = "kasvav";
+            vahetusi = true;
         }
     }
 }
