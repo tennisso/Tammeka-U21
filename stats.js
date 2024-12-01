@@ -27,7 +27,7 @@ function sorteeriTabel(veerg) {
             }
             else if (suund === "kahanev") {
                 if (isNaN(rida) || isNaN(järgmineRida)) {
-                    if (rida < järgmineRida) { 
+                    if (rida > järgmineRida) {
                         peaksVahetama = true;
                     }
                 } else if (Number(rida) < Number(järgmineRida)) {
