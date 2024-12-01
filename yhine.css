@@ -14,6 +14,7 @@ body {
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     padding: 10px 20px;
+    z-index: 3;
 }
 
 .navbar .nav-links {
@@ -80,5 +81,5 @@ body {
     color: white;
 }
 .social-icons a:hover {
-    color: #4CAF50; /* Vähemalt roheliseks, kui hoverdatakse */
+    color: #1300de; /* Vähemalt roheliseks, kui hoverdatakse */
 }

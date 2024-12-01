@@ -53,21 +53,17 @@ img {
 
 .uudisekast p {
     font-size: 0.9em;
-    color: #555;
+    color: black;
     margin: 0;
-}
-
-.uudisekast p:hover {
-    color: #007BFF
+    text-align: left;
 }
 
 .uudisekast a {
     text-decoration: none;
-    color: inherit;
 }
 
 .uudisekast a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .uudiste-list {
