@@ -35,7 +35,7 @@ body {
   /* Change background on mouse-over */
 .navbar a:hover {
     background: #ddd;
-    color: black;
+    color: #1300de;
 }
   
 .social-icons a {

@@ -63,7 +63,7 @@ h3 {
     padding: 0 20px;
 }
 
-.mängija-list {
+.player-list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
