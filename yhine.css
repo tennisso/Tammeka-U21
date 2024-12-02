@@ -3,16 +3,16 @@ body {
     font-family: lulo-clean-w01-one-bold, lulo-clean-w05-one-bold, sans-serif;
 }
 
-/* The navigation bar */
+/* Navigatsiooniriba */
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     background-color: #1300de;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed; 
+    top: 0; 
+    width: 100%;
     padding: 10px 20px;
     z-index: 3;
 }
@@ -22,7 +22,7 @@ body {
     gap: 20px; /* Vahemaa nupud */
 }
   
-  /* Links inside the navbar */
+  /* Lingid nav ribal*/
 .navbar a {
     float: left;
     color: #f2f2f2;
@@ -32,19 +32,16 @@ body {
     font-weight: bold;
 }
   
-  /* Change background on mouse-over */
+  /* Taust muutub, kui hiirega selle kohal olla */
 .navbar a:hover {
     background: #ddd;
-    color: #1300de;
+    color: black;
 }
   
 .social-icons a {
     font-size: 20px;
     color: white;
-    margin-left: 10px; /* Vaheline kaugus sotsiaalmeedia ikonide vahel */
-}
-.social-icons a:hover {
-    color: #4CAF50; /* Hover värv sotsiaalmeedia ikoonidel */
+    margin-left: 10px; /* Sotsiaalmeedia linkide vahe */
 }
 
 .logo-link {
@@ -52,16 +49,15 @@ body {
 }
 
 .logo {
-    width: 50px; /* Kohandage vastavalt logo suurusele */
+    width: 50px; 
     height: auto;
 }
 
-  /* Main content */
 .main {
-    margin-top: 10px; /* Add a top margin to avoid content overlay */
+    margin-top: 10px; /* Et asjad ei kattuks*/
 }
 
-  /* Style all font awesome icons */
+  /* Font awesome ikoonid */
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -70,7 +66,7 @@ body {
     text-decoration: none;
 }
   
-  /* Add a hover effect if you want */
+  /* Hover */
 .fa:hover {
     opacity: 0.7;
 }
